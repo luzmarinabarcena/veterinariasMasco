@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public interface IMascota {
     public abstract void guardarMascota(Mascota masco);
     
-    public abstract ArrayList<Mascota> listarMascotas(Session sesion);
+    public abstract ArrayList<Mascota> listarMascotas();
    public abstract void ActualizarMascota(Mascota masco); 
    
    
@@ -23,5 +23,6 @@ public interface IMascota {
  public abstract ArrayList<Mascota> listPastor(Session sesion);
     public abstract ArrayList<Mascota> listSANDOR(Session sesion);
     public abstract Integer listCount(Session sesion);
+    public abstract boolean eliminarMascota(Mascota mascota);
     
 }

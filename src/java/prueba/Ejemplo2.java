@@ -19,7 +19,7 @@ public class Ejemplo2 {
         ArrayList<Mascota> lista = new ArrayList<>();
         MascotaDao mascotadao = new MascotaDao();
         Session sesion = HibernateUtil.getSessionFactory().openSession();
-        lista = mascotadao.listarMascotas(sesion);
+        lista = mascotadao.listarMascotas();
         System.out.println("LISTA DE LAS MASCOTAS");
         
         for (Mascota mascota : lista) {
