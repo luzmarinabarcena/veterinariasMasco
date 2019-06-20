@@ -16,6 +16,10 @@ and open the template in the editor.
 
     </h:head>
     <h:body>
+        <ui:composition template="./Template.xhtml">
+         <ui:define name="content">
+               
+            
 
         <p:growl id="msj" autoUpdate="true"></p:growl>
         <div align="center">
@@ -76,5 +80,7 @@ and open the template in the editor.
                 </p:dataTable>
                 </h:form>
         </div>
+        </ui:define>
+        </ui:composition>
     </h:body>
 </html>
